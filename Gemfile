@@ -63,7 +63,7 @@ gem 'sass-rails'
 gem 'select2-rails'
 gem 'simple_form'
 gem 'squeel', '1.0.18'
-gem 'stripe', '~> 1.8.4', github: 'stripe/stripe-ruby'
+gem 'stripe'
 gem 'test-unit', '~> 3.0', require: false
 gem 'time_diff'
 gem 'twitter-bootstrap-rails'
