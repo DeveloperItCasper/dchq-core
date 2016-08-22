@@ -26,7 +26,7 @@ Dive Centre HQ provides the core framework for the store. It's a Rails-based app
 To get up and running with Dive Centre HQ is simple. Just follow the
 instructions below and you'll be up and running in minutes.
 
-    git clone https://github.com/dchq/dchq-core
+    git clone https://github.com/fireworrks/dchq-core
     cd dchq-core
     bundle install
     bundle exec rake db:schema:load db:migrate db:seed
