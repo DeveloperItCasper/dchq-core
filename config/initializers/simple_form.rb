@@ -180,4 +180,7 @@ SimpleForm.setup do |config|
 
   # Cache SimpleForm inputs discovery
   # config.cache_discovery = !Rails.env.development?
+  
+  #Remove Country from form
+  config.input_mappings = { /country/ => :string }
 end
