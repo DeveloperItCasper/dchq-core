@@ -18,7 +18,7 @@ gem 'client_side_validations', github: 'bcardarella/client_side_validations', br
 gem 'client_side_validations-simple_form'
 gem 'coffee-rails'
 gem 'combined_time_select', '~> 1.0.1'
-gem 'country_select'
+gem 'country_select', '> 1.2.0'
 gem 'datejs-rails', github: 'oceanshq/datejs-rails'
 gem 'delayed_job_active_record'
 gem 'deep_cloneable', '~> 2.0.0'
