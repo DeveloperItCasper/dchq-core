@@ -12,6 +12,8 @@ class Address < ActiveRecord::Base
       v.validates :state
       v.validates :post_code
     end
+      o.validates :country_code, inclusion: { in: CountrySelect::COUNTRIES.keys }
+  end
 
   attr_accessible :first, :second, :city, :state, :country_code, :post_code
 
