@@ -12,6 +12,6 @@
   .span3.offset3
     = f.input :state, input_html: { class: 'span12' }
   .span3
-    = f.input :country_code, collection: CountrySelect.country.map{ |u| [u.last, u.first] },input_html: { class: 'select2 span12' }
+    = f.input :country_code, collection: CountrySelect::COUNTRIES.map{ |u| [u.last, u.first] },input_html: { class: 'select2 span12' }
   .span2
     = f.input :post_code, input_html: { class: 'span12' }
