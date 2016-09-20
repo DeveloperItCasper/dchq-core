@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   include CurrentStoreInfo
 
   before_filter :authenticate_user!
-  before_filter :check_registration_is_completed, unless: :devise_controller?
+  # before_filter :check_registration_is_completed, unless: :devise_controller?
   before_filter :set_pos_card_referer_flag
   before_filter :check_available_shops
   before_filter :set_timezone, :set_locale, :set_current_user, :set_current_store, :set_currency_for_js

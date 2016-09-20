@@ -4,6 +4,11 @@ class RegistrationsController < Devise::RegistrationsController
   skip_filter :check_access, :check_available_shops
   include Devise::Controllers::ScopedViews
   layout 'registration'
+  before_filter :redirect_to_main_page
+
+  def redirect_to_main_page
+    redirect_to root_path
+  end
 
   def new
     build_resources
