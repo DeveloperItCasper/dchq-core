@@ -6,7 +6,7 @@
     %h2{style: 'font-family: Arial, sans-serif; font-size: 14px; border-bottom-style: dashed; border-bottom-color: #ccc; border-bottom-width: 1px; padding-bottom: 20px; margin: 20px 5%;'}
       = image_tag "#{Figaro.env.host}/assets/email-logo.png", alt: t('company_mailer.common.company_hq')
     %p.hello{style: 'font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; font-weight: bold; margin: 15px 5%;'}= t('company_mailer.welcome.congratulations')
-    %p{style: 'font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; margin: 15px 5%;'}= t('company_mailer.common.hi', full_name: @company.owner.full_name)
+    %p{style: 'font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; margin: 15px 5%;'}= t('company_mailer.common.hi', full_name: @company.owner.try(:full_name))
     %p{style: 'font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; margin: 15px 5%;'}
       = t('company_mailer.welcome.able_to_login')
     %p{style: 'font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; margin: 15px 5%;'}
@@ -15,7 +15,7 @@
       = t('company_mailer.welcome.account_access')
       %br
       = t('company_mailer.welcome.username')
-      %strong #{@company.owner.email}
+      %strong #{@company.owner.try(:email)}
       %br
       = t('company_mailer.welcome.password')
       %strong= t('company_mailer.welcome.set_a_registration')
